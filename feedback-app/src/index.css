@@ -32,6 +32,11 @@ header {
   margin-bottom: 30px;
 }
 
+header a {
+  color: #ff6a95;
+  text-decoration: none;
+}
+
 .card {
   background-color: #fff;
   color: #333;
@@ -227,4 +232,20 @@ input:focus {
   .input-group input {
     width: 80%;
   }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #ff6a95;
+  /* padding-right: 35px; */
+  text-decoration: none;
+  padding-right: 35px;
+}
+
+.active {
+  color: #fff;
 }

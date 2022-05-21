@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Header({ title }) {
   const headerStyle = {
@@ -9,7 +10,13 @@ function Header({ title }) {
   return (
     <header style={headerStyle}>
       <div className='container'>
-        <h2>{title}</h2>
+        <Link
+          to={{
+            pathname: '/',
+          }}
+        >
+          <h2>{title}</h2>
+        </Link>
       </div>
     </header>
   );
